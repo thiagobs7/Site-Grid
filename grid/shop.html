@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogani | Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <div class="esquerda">
+                <div class="email">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                    </svg>
+                    hello@colorlib.com
+                </div>
+                <div id="barra"></div>
+                <div class="promo">Free Shipping for all Order of $99</div>
+            </div>
+            <div class="centro-vazia"></div>
+            <div class="direita">
+                <div class="redes">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                        class="facebook"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                        class="twitter"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                        class="linkedin"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                        class="pinterest"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
+                    </svg>
+                </div>
+                <div id="barra"></div>
+                <div class="language">
+                    <ul id="idioma">
+                        <li>
+                            <img src="/shop/image/image.png" alt="">
+                            English
+                            <img src="/shop/image/down-arrow-5.png" alt="" class="seta">
+                            <ul class="idioma-dropdown">
+                                <li>Spanis</li>
+                                <li>English</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="barra"></div>
+                <div class="login">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                    </svg>
+                    Login
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="inicio">
+        <div class="vazio"></div>
+        <div id="logo">
+            <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="">
+        </div>
+        <div id="menu">
+            <nav>
+                <ul class="menu-pag-inicial">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="blog"><a href="shop.html">Shop</a></li>
+                    <li id="pages">
+                        <a href="">Pages</a>
+
+                        <ul id="drop-page">
+                            <li id="Details">Shop Details</li>
+                            <li id="Cart">Shopping Cart</li>
+                            <li id="Out">Check Out</li>
+                            <li id="blog">Blog Details</li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="notif">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+            </svg>
+            <span id="qnt">1</span>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                    d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+            </svg>
+            <span id="qnt">3</span>
+            <p>item: <span id="preco">$150.00</span></p>
+        </div>
+        <div class="vazio"></div>
+    </section>
+
+    <section class="tela-principal">
+        <div id="drop-click">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+            All departaments
+            <img src="/shop/image/white-down-arrow-png-2.png" alt="">
+            <div class="click">
+                <ul id="alldrop">
+                    <li>Fresh Meat</li>
+                    <li>Vegetables</li>
+                    <li>Fruit & Nut Gifts</li>
+                    <li>Fresh Berries</li>
+                    <li>Ocean Foods</li>
+                    <li>Butter & Eggs</li>
+                    <li>Fastfood</li>
+                    <li>Fresh Onion</li>
+                    <li>Papayaya & Crisps</li>
+                    <li>Oatmeal</li>
+                    <li>Fresh Bananas</li>
+                </ul>
+            </div>
+        </div>
+        <div id="pesquisar">
+            <form action="#">
+                <div class="categoria">
+                    All Categories
+                    <img src="down-arrow-5.png" alt="">
+                </div>
+                <div id="barra-2"></div>
+                <div class="input">
+                    <input type="text" placeholder="What do yo u need?">
+                </div>
+                <div id="botao">
+                    <button type="submit">SEARCH</button>
+                </div>
+            </form>
+        </div>
+        <div id="telefone">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#7fad39"
+                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                </svg>
+            </div>
+            <div class="num">
+                <h5 id="num">+65 11.188.888</h5>
+                <span id="hr">support 24/7 time</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="img-titulo">
+        <h2>Organi Shop</h2>
+        <p><a href="../base/teste.html">Home-</a>Shop</p>
+    </section>
+
+    <section class="conteudo">
+        <div class="collumn-2">
+            <div>
+                <h4>Department</h4>
+                <ul>
+                    <li>Fresh Meat</li>
+                    <li>Vegetables</li>
+                    <li>Fruit & Nut Gifts</li>
+                    <li>Fresh Berries</li>
+                    <li>Ocean Foods</li>
+                    <li>Butter & Eggs</li>
+                    <li>Fastfood</li>
+                    <li>Fresh Onion</li>
+                    <li>Papayaya & Crisps</li>
+                    <li>Oatmeal</li>
+                </ul>
+            </div>
+
+            <div class="price">
+                <h4>Price</h4>
+                <input type="range">
+                <span>$10 - $540</span>
+            </div>
+
+            <div class="color">
+                <h4>Colors</h4>
+                <div class="input-cores">
+                    <div class="esquerda-input">
+                        <div>
+                            <label for="radio" id="white"></label> <span>White</span>
+                        </div>
+                        <div>
+                            <label for="radio" id="red"> </label> <span>Red</span>
+                        </div>
+                        <div>
+                            <label for="radio" id="blue"></label> <span>Blue</span>
+                        </div>
+                    </div>
+                    <div class="direita-input">
+                        <div>
+                            <label for="radio" id="gray"></label> <span>Gray</span>
+                        </div>
+                        <div>
+                            <label for="radio" id="black"></label> <span>Black</span>
+                        </div>
+                        <div>
+                            <label for="radio" id="green"></label> <span>Green</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="popular">
+                <h4>Popular Size</h4>
+                <div class="tags-popular">
+                    <a href="#">Large</a>
+                    <a href="#">Medium</a>
+                    <a href="#">Small</a>
+                    <a href="#">Tiny</a>
+                </div>
+            </div>
+
+            <div class="latest">
+                <div class="titulo-seta">
+                    <h4>Latest Products</h4>
+                    <button type="button"> < </button>
+                    <button type="button"> > </button>
+                </div>
+
+                <div class="produtos-finais">
+                    <div class="produto-rec">
+                        <div class="img-alface">
+                            <img src="https://preview.colorlib.com/theme/ogani/img/latest-product/lp-1.jpg.webp" alt="">
+                        </div>
+                        <div class="text-alface">
+                            <h6>Crap Pool Security</h6>
+                            <span>$30.00</span>
+                        </div>
+                    </div>
+                    <div class="produto-rec-2">
+                        <div class="img-alface">
+                            <img src="https://preview.colorlib.com/theme/ogani/img/latest-product/lp-2.jpg.webp" alt="">
+                        </div>
+                        <div class="text-alface">
+                            <h6>Crap Pool Security</h6>
+                            <span>$30.00</span>
+                        </div>
+                    </div>
+                    <div class="produto-rec-3">
+                        <div class="img-alface">
+                            <img src="https://preview.colorlib.com/theme/ogani/img/latest-product/lp-3.jpg.webp" alt="">
+                        </div>
+                        <div class="text-alface">
+                            <h6>Crap Pool Security</h6>
+                            <span>$30.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="collumn-3">
+            <div class="titulo-e-barra">
+                <h2>Sale Off</h2>
+                <div class="barra-verde"></div>
+            </div>
+
+            <div class="produto-1">
+                <div class="bola-desconto">-20%</div>
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/discount/pd-4.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <span>Dried Fruit</span>
+                    <h5><a href="#">Raisin'n'nuts</a></h5>
+                    <div class="preco">
+                        $30.00
+                        <span>$36.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="barra-cinza"></div>
+
+            <div class="filtro">
+                <span>Sort By</span>
+                <span class="default">Default <img src="image/down-arrow-5.png" alt=""></span>
+            </div>
+
+            <div id="produto-1">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/product-1.jpg.webp" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+            <div id="produto-5">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/discount/pd-6.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+            <div id="produto-5">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/product-7.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+            <div id="produto-5">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/product-10.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+            <div id="numeros">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#b2b2b2" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="collumn-4">
+            <div class="produto-2">
+                <div class="bola-desconto">-20%</div>
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/discount/pd-5.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <span>Dried Fruit</span>
+                    <h5><a href="#">Raisin'n'nuts</a></h5>
+                    <div class="preco">
+                        $30.00
+                        <span>$36.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button">
+                <button></button>
+                <button></button>
+            </div>
+
+            <div class="filtro-2">
+                <span class="default-2">16</span>
+                <span>Products Found</span>
+            </div>
+
+            <div id="produto-2">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/product-2.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+            <div id="produto-5">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/discount/pd-5.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+            <div id="produto-6">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/product-8.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+            <div id="produto-7">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/product-11.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="collumn-5">
+            <div class="produto-3">
+                <div class="bola-desconto">-20%</div>
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/discount/pd-6.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <span>Dried Fruit</span>
+                    <h5><a href="#">Raisin'n'nuts</a></h5>
+                    <div class="preco">
+                        $30.00
+                        <span>$36.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto-4">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/product-3.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+            <div id="produto-3">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/discount/pd-4.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+            <div id="produto-8">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/product-9.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+            <div id="produto-5">
+                <div class="img-produto">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/product/product-12.jpg" alt="">
+                </div>
+                <div class="nome-preco">
+                    <h5><a href="#">Crab Pool Security</a></h5>
+                    <div class="preco">
+                        $30.00
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div id="logo-footer">
+            <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="">
+            <p>Address: 60-49 Road 11378 New York</p>
+            <p>Phone: +65 11.188.888</p>
+            <p>Email: hello@colorlib.com</p>
+        </div>
+
+        <div id="userful">
+            <h6>Useful Links</h6>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">About Our Shop</a></p>
+            <p><a href="#">Secure Shopping</a></p>
+            <p><a href="#">Delivery information </a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Our Sitemap</a></p>
+        </div>
+
+        <div id="userful-2">
+            <p><a href="#">Who We Are</a></p>
+            <p><a href="#">Our Services</a></p>
+            <p><a href="#">Projects</a></p>
+            <p><a href="#">Contact</a></p>
+            <p><a href="#">Innovation</a></p>
+            <p><a href="#">Testimonials</a></p>
+        </div>
+
+        <div id="finalzin">
+            <h6>Join Our Newsletter Now</h6>
+            <p>Get E-mail updates about our latest shop and special offers.</p>
+            <form action="#">
+                <input type="text" placeholder="Enter Your mail" id="input-final">
+                <button type="submit" id="pra-fechar">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="redes-footer">
+            <a href="" class="link-face"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#000000"
+                        d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                </svg></a>
+
+            <a href="" class="link-insta"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                    id="insta"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg></a>
+
+            <a href="" class="link-tt">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    id="tt"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                </svg>
+            </a>
+
+            <a href="" class="link-pinter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+                    id="pinter"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                </svg>
+            </a>
+        </div>
+
+        <div id="linha"></div>
+        <div class="Copyright">
+            <p>Copyright ©2024 All rights reserved | This template is made with <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                </svg> by <a href="" id="colorib">Colorlib</a></p>
+        </div>
+        <div class="card">
+            <img src="https://preview.colorlib.com/theme/ogani/img/payment-item.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>
